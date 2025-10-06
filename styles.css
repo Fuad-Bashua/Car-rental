@@ -1,0 +1,1305 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+:root {
+    --primary: #fa4226;
+}
+
+/* Global Size */
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+}
+
+a { 
+    text-decoration: none;
+}
+
+.car__logo {
+    width: 128px;
+}
+
+#navbar {
+    background: #f8f8f8;
+}
+
+.nav__links {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.nav__link {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.nav__links a {
+    color: black;
+}
+
+.nav__link:hover {
+    color: var(--primary);
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 300ms ease;
+}
+
+.signUp__btn {
+    padding: 12px 24px;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.register .signUp__btn:hover {
+   box-shadow: 0 5px 10px rgba(255, 0, 0, 0.5);;
+}
+
+.nav__menu {
+    display: none;
+    color: black;
+    background-color: transparent;
+    font-size: 24px;
+    outline: none;
+}
+
+#header {
+    background: #f8f8f8;
+}
+
+.header-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header__row {
+    display: flex;
+}
+
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 16px;
+}
+
+.header__span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 63px;
+}
+
+.header__title__span {
+    color: var(--primary);
+
+}
+
+.header__para {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    color: grey;
+}
+
+.header__btns {
+    display: flex;
+    gap: 16px;
+}
+
+.book__btn {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: white;
+    transition: 300ms ease;
+}
+
+.learn__more__btn {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    transition: 300ms ease;
+}
+
+.header__img__wrapper {
+    width: 60%;
+}
+
+.feature__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.feature__list {
+    display: flex; 
+    padding: 0 32px;
+    margin-top: 36px;
+    gap: 56px 120px;
+}
+
+.features__img__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.feature__text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.feature__title {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.feature__sub__text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+#banner {
+    background-color: #2d2d2d;
+}
+
+.banner__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 24px;
+}
+
+.banner__title {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.banner__para {
+        font-size: 24px;
+        font-weight: 400;
+}
+
+.banner__span {
+    color: var(--primary);
+}
+
+#choose {
+    background-image: url(assets/choose-bg.png);
+    background-repeat: no-repeat;
+    background-position: -255px 255px;
+    background-size: cover;
+}
+
+
+.choose__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose__car {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    width: 100%;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.choose__span {
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.choose__title {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.choose__para {
+    margin-top: 12px;
+    color: gray;
+}
+
+.choose__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--primary);
+    transition: 300ms ease;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.choose__btn:hover {
+    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.3);
+}
+
+.leftside__title {
+    font-size: 24px;
+}
+
+.leftside__para {
+    font-size: 15px;
+    color: gray;
+}
+
+.leftside {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.ccd__container {
+    display: flex;
+    gap: 12px;
+}
+
+.choose__img {
+    width: 110px;
+    height: 110px;
+}
+
+.ccd {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#testimonals {
+    background: #f8f8f8;
+}
+
+.testimonals__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.testimonal__para {
+    margin-bottom: 80px;
+}
+
+.testimonal__title {
+    font-size: 42px;
+ 
+}
+
+.testimonal__span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.testimonal__para {
+    max-width: 700px;
+    margin-top: 16px;
+    color: gray;
+}
+
+.testimonal {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+}
+
+.test__container {
+    display: flex;
+    gap: 24px;
+}
+
+.testimonal__card {
+    display: flex;
+    border: 1px solid none;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 540px;
+    width: 100%;
+    padding: 56px;
+}
+
+.testimonal__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.testmimonal__review {
+    margin-bottom: 32px;
+    font-size: 22px;
+    text-align: left;
+}
+
+.test__text__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.test__img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+
+.tt {
+        font-size: 18px;
+        font-weight: 600;
+}
+
+.ttr {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.download__row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.download__wrapper {
+    display: flex;
+    gap: 36px;
+}
+
+
+.download__title {
+    font-size: 42px;
+}
+
+.download__para {
+    color: gray;
+}
+
+.footer__row {
+    display: flex;
+    gap: 80px;
+}
+
+
+.footer__car__rental {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__car__rental a {
+    color: black;
+}
+
+.footer__company {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__working__hours {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__sub {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__form {
+    height: 48px;
+    padding: 0 16px;
+    outline: none;
+    border: none;
+    background-color: #ececec;
+    width: 244px;
+}
+
+.submit__footer {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: white;
+    background: var(--primary);
+    border-radius: 4px;
+    transition: 300ms ease;
+    width: 244px;
+}
+
+.submit__footer:hover {
+        box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.footer__car__title {
+    font-size: 24px;
+}
+
+.footer__car__para {
+    color: gray;
+}
+
+.footer__comp__title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.footer__work {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.footer__work {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.footer__form {
+    transition: 300ms ease;
+
+}
+
+.footer__details {
+    transition: 300ms ease;
+}
+
+.footer__details:hover {
+    color: var(--primary);
+}
+
+.footer__form:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);;
+}
+
+.favi {
+    transition: 300ms ease;
+}
+
+.favi:hover {
+    color: var(--primary);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+:root {
+    --primary: #fa4226;
+}
+
+/* Global Size */
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.container {
+    padding: 80px 0;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+}
+
+a { 
+    text-decoration: none;
+}
+
+.car__logo {
+    width: 128px;
+}
+
+#navbar {
+    background: #f8f8f8;
+}
+
+.nav__links {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.nav__link {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.nav__links a {
+    color: black;
+}
+
+.nav__link:hover {
+    color: var(--primary);
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 300ms ease;
+}
+
+.signUp__btn {
+    padding: 12px 24px;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.register .signUp__btn:hover {
+   box-shadow: 0 5px 10px rgba(255, 0, 0, 0.5);
+}
+
+#header {
+    background: #f8f8f8;
+}
+
+.header-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header__row {
+    display: flex;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 16px;
+}
+
+.header__span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 63px;
+}
+
+.header__title__span {
+    color: var(--primary);
+}
+
+.header__para {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    color: grey;
+}
+
+.header__btns {
+    display: flex;
+    gap: 16px;
+}
+
+.book__btn {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: white;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+.learn__more__btn {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+.header__img__wrapper {
+    width: 60%;
+}
+
+.header--img {
+    width: 100%;
+    height: auto;
+}
+
+.feature__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__list {
+    display: flex; 
+    padding: 0 32px;
+    margin-top: 36px;
+    gap: 56px 120px;
+}
+
+.features__img__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.features__img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.feature__text {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.feature__title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.feature__sub__text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#banner {
+    background-color: #2d2d2d;
+}
+
+.banner__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 24px;
+    text-align: center;
+}
+
+.banner__title {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.banner__para {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.banner__span {
+    color: var(--primary);
+}
+
+#choose {
+    background-image: url(assets/choose-bg.png);
+    background-repeat: no-repeat;
+    background-position: -255px 255px;
+    background-size: cover;
+}
+
+.choose__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-car {
+    width: 100%;
+    max-width: 680px;
+}
+
+.choose__car {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    width: 100%;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.choose__span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.choose__title {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.choose__para {
+    margin-top: 12px;
+    color: gray;
+}
+
+.choose__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--primary);
+    transition: 300ms ease;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 4px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.choose__btn:hover {
+    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.3);
+}
+
+.leftside__title {
+    font-size: 24px;
+}
+
+.leftside__para {
+    font-size: 15px;
+    color: gray;
+}
+
+.leftside {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.ccd__container {
+    display: flex;
+    gap: 12px;
+}
+
+.choose__img {
+    width: 110px;
+    height: 110px;
+}
+
+.choose__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.ccd {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#testimonals {
+    background: #f8f8f8;
+}
+
+.testimonals__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.testimonal__para {
+    margin-bottom: 80px;
+}
+
+.testimonal__title {
+    font-size: 42px;
+    text-align: center;
+}
+
+.testimonal__span {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.testimonal__para {
+    max-width: 700px;
+    margin-top: 16px;
+    color: gray;
+    text-align: center;
+}
+
+.test__container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonal__card {
+    display: flex;
+    border: 1px solid none;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 540px;
+    width: 100%;
+    padding: 56px;
+}
+
+.testimonal__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.testmimonal__review {
+    margin-bottom: 32px;
+    font-size: 22px;
+    text-align: left;
+}
+
+.test__text__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.test__img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.tt {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ttr {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.download__row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.download__wrapper {
+    display: flex;
+    gap: 36px;
+}
+
+.download__link__img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.download__title {
+    font-size: 42px;
+}
+
+.download__para {
+    color: gray;
+}
+
+footer {
+    background: #fff;
+}
+
+.footer__row {
+    display: flex;
+    gap: 80px;
+}
+
+.footer__car__rental {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__car__rental a {
+    color: black;
+}
+
+.footer__company {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__working__hours {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__sub {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__form {
+    height: 48px;
+    padding: 0 16px;
+    outline: none;
+    border: none;
+    background-color: #ececec;
+    width: 244px;
+}
+
+.submit__footer {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: white;
+    background: var(--primary);
+    border-radius: 4px;
+    transition: 300ms ease;
+    width: 244px;
+    cursor: pointer;
+}
+
+.submit__footer:hover {
+    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+}
+
+.footer__car__title {
+    font-size: 24px;
+}
+
+.footer__car__para {
+    color: gray;
+}
+
+.footer__comp_title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.footer__work {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.footer__form {
+    transition: 300ms ease;
+}
+
+.footer__details {
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+.footer__details:hover {
+    color: var(--primary);
+}
+
+.footer__form:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.favi {
+    transition: 300ms ease;
+}
+
+.favi:hover {
+    color: var(--primary);
+}
+
+.favicon {
+    font-size: 36px;
+    color: var(--primary);
+}
+
+/* 1280px */
+@media (max-width: 1280px) {
+    .footer__car__rental,
+    .footer__company,
+    .footer__working__hours,
+    .footer__sub {
+        width: 40%;
+    }
+}
+
+/* 1024px - Tablet Landscape */
+@media (max-width: 1024px) {
+
+    .nav__links,
+    .register {
+        display: none;
+    }
+    
+
+    .feature__list {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .features__img__wrapper {
+        width: 45%;
+    }
+    
+
+    .choose__car {
+        width: 100%;
+        gap: 44px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightside {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .test__container {
+        flex-direction: column;
+    }
+}
+
+/* 768px - Tablet Portrait */
+@media (max-width: 768px) {
+    .header__img__wrapper {
+        display: none;
+    }
+    .header-bg {
+        display: none;
+    }
+    .header__row {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header__content {
+        align-items: center;
+        width: 100%;
+    }
+    .header__para br {
+        display: none;
+    }
+    
+    .features__img__wrapper {
+        width: 100%;
+    }
+    .feature__list {
+        flex-direction: column;
+    }
+    
+    #download {
+        background: none;
+    }
+    .download__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .download__wrapper {
+        justify-content: center;
+    }
+    .download__para br {
+        display: none;
+    }
+    
+    .footer__row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .footer__car__rental,
+    .footer__company,
+    .footer__working__hours,
+    .footer__sub {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonal__card {
+        padding: 32px;
+    }
+    .testmimonal__review {
+        font-size: 18px;
+    }
+    
+    .footer__row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__car__rental,
+    .footer__company,
+    .footer__working__hours,
+    .footer__sub {
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+/* 480px - Mobile Portrait */
+@media (max-width: 480px) {
+    .header__btns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .book__btn,
+    .learn__more__btn {
+        width: 100%;
+    }
+    .header__row {
+        align-items: center;
+    }
+    
+    .feature__list {
+        margin-top: 24px;
+    }
+    
+    .rightside {
+        text-align: center;
+        max-width: 420px;
+    }
+    .ccd__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .testimonal__card {
+        padding: 24px;
+    }
+    
+    .download__wrapper {
+        margin-top: 4px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .download__link {
+        width: 60%;
+    }
+    .download__link__img {
+        width: 100%;
+    }
+}
