@@ -64,11 +64,46 @@ a {
     color: var(--primary);
 }
 
-.hamburger {
-    background-color: transparent;
-    display: none;
-    font-size: 24px;
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f8f8f8;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease;
+}
 
+.menu .nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-size: 24px;
+    align-items: center;
+}
+
+.menu .nav__link {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.burger__close {
+    position: absolute;
+    top: 44px;
+    right: 32px;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    cursor: pointer;
 }
 
 .register {
@@ -102,19 +137,15 @@ a {
     background-color: transparent;
     font-size: 24px;
     outline: none;
+    border: none;
 }
 
 .hamburger {
-  display: block;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 18px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  gap: 4px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    display: none;
 }
 
 .hamburger span {
@@ -1042,21 +1073,13 @@ a {
     font-weight: 400;
 }
 
-.download__row {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
+#download {
+    background-image: url(assets/download-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-.download__wrapper {
-    display: flex;
-    gap: 36px;
-}
-
-.download__links {
-    display: flex;
-    gap: 32px;
-}
 
 .download__content {
     display: flex;
@@ -1065,11 +1088,11 @@ a {
     gap: 20px;
 }
 
-
-.download__link__img {
-    width: 100%;
-    max-width: 200px;
+.download__wrapper {
+    display: flex;
+    gap: 36px;
 }
+
 
 .download__title {
     font-size: 42px;
@@ -1078,18 +1101,6 @@ a {
 .download__para {
     color: gray;
 }
-
-.phone__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 500px;
-}
-
-.background-bg {
-
-}
-
 
 
 
@@ -1206,13 +1217,11 @@ footer {
 }
 
 #qouter {
-    display: flex;
-
-    font-size: 36px;
+    font-size: 44px;
     color: var(--primary);
-    font-weight: 900;
-
+    margin-left: auto;
 }
+
 
 /* 1280px */
 @media (max-width: 1280px) {

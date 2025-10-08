@@ -1,7 +1,11 @@
-function openMenu () {
-    document.body.classList.add("open");
+function openMenu() {
+    const menu = document.querySelector('.menu');
+    menu.style.opacity = '1';
+    menu.style.visibility = 'visible';
 }
 
-function closeMenu () {
-    document.body.classList.remove("open");
+function closeMenu() {
+    const menu = document.querySelector('.menu');
+    menu.style.opacity = '0';
+    menu.style.visibility = 'hidden';
 }
