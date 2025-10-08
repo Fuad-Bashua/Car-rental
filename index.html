@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <title>Car Rental</title>
 </head>
 <body>
@@ -21,28 +24,30 @@
                 </div>
                 <div class="register">
                        <a href="#" class="nav__link">Sign In</a>
-                       <a href="#"><button class="signUp__btn">Register</button></a>
+                       <a href="#"><button class="signUp__btn">Register</button>
+                    </a>
                 </div>
 
-                <button class="nav__menu" onClick="openMenu()">
+                <!-- Hambuger -->
+                 <button class="hamburger">
                     <i class="fa-solid fa-bars"></i>
-                </button>
+                 </button>
             </div>
      </nav>
 
   
 
      <!-- Header -->
-      <header id="header">
+      <header id="header"> 
         <div class="container">
-            <!-- <img src="/assets/header-bg.png" alt="header-bg" class="header-bg"> -->
+            <img src="/assets/header-bg.png" alt="header-bg" class="header-bg">
             <div class="row header__row">
                 <div class="header__content">
                     <h4 class="header__span">Plan your trip now</h4>
                     <h1 class="header__title">Save <span class="header__title__span">big</span> with our car rental</h1>
                     <p class="header__para">Rent the car of your dreams. Unbeatable prices, unlimited <br> miles, flexible pick-up options and much more.</p>
                     <div class="header__btns">
-                        <button class="book__btn">Book Ride</button>
+                        <button class="book__btn">Book Ride </button>
                         <button class="learn__more__btn">Learn More ></button>
                     </div>
                 </div>
@@ -148,10 +153,9 @@
                                 <p class="tt">Parry Hotter </p>
                                 <p class="ttr">Belgrade</p>
                             </div>
+                            <i class="fa-solid fa-quote-right" aria-hidden="true" id="qouter"></i>
                         </div>
-                        <div class="favicon">
-                            <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
-                        </div>
+                            
                     </div>
                 </div>
                     <div class="testimonal__card">
@@ -163,10 +167,10 @@
                                 <p class="tt">Ron Rizzly </p>
                                 <p class="ttr">Novi Sad</p>
                             </div>
+                             <i class="fa-solid fa-quote-right" aria-hidden="true" id="qouter"></i>
                         </div>
-                        <div class="favicon">
-                            <i class="fa-solid fa-quote-right" aria-hidden="true"></i>
-                        </div>
+
+                            
                     </div>
                     </div>
 
@@ -179,20 +183,15 @@
             <section id="download">
                 <div class="container">
                     <div class="row download__row">
+                        <div class="download__content">
                         <h1 class="download__title">Download our app to get most out of it</h1>
                         <p class="download__para">Thrown shy denote ten ladies though ask saw. Or by to he going <br> think order event music. Incommode so intention defective at <br> convinced. Led income months itself and houses you.</p>
-                        <div class="download__wrapper">
                         <div class="download__links">
                             <a href="" class="download__link"><img src="/assets/google play.png" alt="" class="download__link__img"></a>
-                        </div>
-                        <div class="download__links">
                             <a href="" class="download__link"><img src="/assets/app store.png" alt="" class="download__link__img"></a>
                         </div>
                         </div>
-
-                        <div class="phone__wrapper">
-                            <img src="" alt="">
-                        </div>
+                         <img src="/assets/download-bg.png" alt="download-bg" class="background-bg">
                     </div>
                 </div>
             </section>
@@ -209,7 +208,7 @@
                             (123) -456-789
                         </a>
                          <a href="" class="favi">
-                         <i class="fa-solid fa-phone"></i>   
+                         <i class="fa-solid fa-envelope footer__link__icon"></i>   
                             carrental@gmail.com
                         </a>
                         <a href="" class="favi">
